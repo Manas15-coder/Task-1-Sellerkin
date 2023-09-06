@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(0, 0%, 94%);
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 4s ease-in;
+}
+
+header {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-image:
+        linear-gradient(45deg,
+            rgba(10, 15, 108, 0.82),
+            rgba(133, 33, 18, 0.819));
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0;
+}
+
+header p {
+    font-size: 16px;
+    margin: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+#banner {
+    padding: 20px 40px;
+    background-image:
+        linear-gradient(45deg,
+            rgba(10, 15, 108, 0.82),
+            rgba(133, 33, 18, 0.819)), url('https://www.teamly.com/blog/wp-content/uploads/2022/11/Challenges-for-Scaling-up-Business.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#banner p {
+    margin-top: 2px;
+    background-color: yellow;
+    border-radius: 25px;
+    padding: 5px 5px;
+    color: red;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#banner h4 {
+    font-weight: 600;
+    color: #fff;
+}
+
+@media (min-width: 768px) {
+    #banner {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner h5 {
+        margin-top: 0;
+    }
+}
+
+#video {
+    padding: 20px 40px;
+    /* Adjust padding for responsiveness */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.youtube-video {
+    max-width: 100%;
+    max-width: 100%;
+    height: 400px;
+    width: 600px;
+}
+
+#video p {
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#features {
+    padding: 80px 0;
+    text-align: center;
+    background-image: linear-gradient(45deg, rgba(10, 15, 108, 0.924), rgba(133, 33, 18, 0.929)), url('https://wallpaperaccess.com/full/2593042.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#features h6 {
+    margin-top: 2rem;
+    color: #fff;
+}
+
+#features p {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+#features .text {
+    color: yellow;
+}
+
+#scale {
+    padding: 80px 0;
+    /* Adjust padding for responsiveness */
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929)), url('https://images.websitebuilderexpert.com/wp-content/uploads/2021/12/04090651/How-to-scale-your-ecomerce-business.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+#scale p {
+    margin-top: 2rem;
+    /* Adjust margin for spacing */
+    color: #ADFF2F;
+    border-radius: 20px;
+    font-size: 28px;
+}
+
+#scale h3 {
+    margin-top: 2rem;
+    /* Adjust margin for spacing */
+    border: 2px dashed #fff;
+    padding: 10px 20px;
+    color: #FFF01F;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #39FF14;
+    color: red;
+    font-size: 28px;
+    padding: 10px 20px;
+    font-weight: bold;
+    width: 100%;
+    max-width: 500px;
+}
+
+#content {
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929)), url('https://www.theglobalrecruiter.com/wp-content/uploads/2019/07/shutterstock_1361862659-e1564347013847.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    color: #fff;
+}
+
+#content p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+#content h6 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    /* From https://css.glass */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    max-width: 100%;
+}
+
+.card-img-top {
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #39FF14;
+
+}
+
+.card-body {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: left;
+    color: #fff;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .card-img-top {
+        max-height: none;
+    }
+}
+
+#winning-formula {
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929)), url('https://media.istockphoto.com/id/1081335772/photo/education-learn-science-dart-target-concept.jpg?s=612x612&w=0&k=20&c=uzbSyWmzL84Mr_gps7dFaY-hvlxogbLx7FFmK6J2Kkk=');
+    padding: 80px 0;
+    /* Adjust padding for responsiveness */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+#winning-formula img {
+    max-width: 100%;
+    border-radius: 10px;
+    /* Ensure images scale with responsiveness */
+}
+
+#winning-formula h2 {
+    text-align: center;
+    color: #39FF14;
+    /* Use the appropriate color value for neon yellow */
+    font-weight: bold;
+}
+
+.step-number {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    color: red;
+}
+
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.steps {
+    color: red;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px 20px;
+    background-color: yellow;
+}
+
+#sales-page {
+    padding: 80px 0;
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929)), url('https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-ecommerce-banner-planning-segmentation-selection-image_1375247.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.sales-content {
+    font-size: 18px;
+}
+
+.sales-content h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sales-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sales-content ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.sales-content ul li i {
+    margin-right: 10px;
+    color: #39FF14;
+    font-size: 20px;
+}
+
+.sales-illustration img {
+    max-width: 100%;
+}
+
+
+#customer-feedback {
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929)), url('https://png.pngtree.com/thumb_back/fh260/background/20220522/pngtree-ecommerce-banner-planning-segmentation-selection-image_1375247.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 60px 0;
+}
+
+.section-title {
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.customer-feedback-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.customer-image img {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.customer-text p {
+    font-size: 16px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.customer-text strong {
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-image: linear-gradient(45deg,
+            rgba(10, 15, 108, 0.924),
+            rgba(133, 33, 18, 0.929));
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
